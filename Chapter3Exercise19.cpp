@@ -26,12 +26,12 @@ int main()
         (pow((1 + (mrate / 100)), numpay) - 1)) * loan;                             //calculate amount using user values
 
     cout << std::fixed << std::setprecision(2)
-        << "\nLoan Amount: $" << loan 
-        << "\nMonthly Interest Rate: " << mrate << "%"
-        << "\nNumber of Payments: " << numpay
-        << "\nMonthly Payments: $" << mpayment
-        << "\nAmount Paid Back: $" << mpayment * numpay
-        << "\nInterest Paid: $" << (mpayment * numpay) - loan;                               //display values
+        << "\nLoan Amount:                $" << setw(10)<< loan 
+        << "\nMonthly Interest Rate:       " << setw(10) << mrate << "%"
+        << "\nNumber of Payments:          " << setw(10) << numpay
+        << "\nMonthly Payments:           $" << setw(10) << mpayment
+        << "\nAmount Paid Back:           $" << setw(10) << mpayment * numpay
+        << "\nInterest Paid:              $" << setw(10) << (mpayment * numpay) - loan;                               //display values
         
     return 0;
 }
