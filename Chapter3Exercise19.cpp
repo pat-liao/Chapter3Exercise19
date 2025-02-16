@@ -32,7 +32,6 @@ int main()
         << "\nMonthly Payments: $" << mpayment
         << "\nAmount Paid Back: $" << mpayment * numpay
         << "\nInterest Paid: $" << (mpayment * numpay) - loan;                               //display values
-
-    return 0;
+        
     return 0;
 }
